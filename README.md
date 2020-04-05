@@ -4,11 +4,11 @@ Fork of https://git.scit.ch/rs/VestaCP-MultiPHP - Supports Ubuntu 18.04
 This a little rewrite of the idea from Peter Anikin (http://anikin.pw/all/multiversionnost-php-n-aservere-s-vestacp/).
 ## Install Dependencies
 ```bash
-Ubuntu 18.04
+#Ubuntu 18.04
 sudo apt update
 sudo apt-get install wget build-essential libssl-dev libxml2-dev pkg-config libssl-dev  libbz2-dev libcurl4-openssl-dev libmysqlclient-dev libgdbm-dev libjpeg62 libjpeg62-dev libxml2 libxml2-dev libmcrypt4 libmcrypt-dev libmhash2 libmhash-dev libmm-dev libmm14 libtidy-dev libxslt1-dev libxslt1.1 libfreetype6 libfreetype6-dev libicu-dev libreadline-dev autoconf
 
-Ubuntu Older
+#Ubuntu Older
 apt-get install build-essential libssl-dev libxml2-dev pkg-config libssl-dev libsslcommon2-dev libbz2-dev libcurl4-openssl-dev libmysqlclient-dev libgdbm-dev libjpeg62 libjpeg62-dev libpng12-0 libpng12-dev libxml2 libxml2-dev libmcrypt4 libmcrypt-dev libmhash2 libmhash-dev libmm-dev libmm14 libtidy-dev libtidy-0.99-0 libxslt1-dev libxslt1.1 libfreetype6 libfreetype6-dev libicu-dev libreadline-dev
 
 # Small Modification for PHP 5.3/5.4 Compilation (http://stackoverflow.com/a/26342869)
@@ -25,6 +25,8 @@ sudo mv phpbrew /usr/bin/phpbrew
 
 mkdir -p /usr/local/php
 phpbrew init --root=/usr/local/php
+
+#you must run this to proper use the phpbrew cli
 export PHPBREW_ROOT=/usr/local/php
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
